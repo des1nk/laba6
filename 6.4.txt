@@ -1,0 +1,44 @@
+//ƒаны целые положительные числа A, B, C. Ќа пр€моугольнике размера A ? B размещено максимально возможное количество квадратов со стороной C (без наложений). Ќайти количество квадратов, размещенных на пр€моугольнике, а также площадь незан€той части пр€моугольника.
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+int main()
+{
+ int A, B, C;
+ cout << "A=";
+ cin >> A;
+ if (A > 0)
+ {
+ cout << "B=";
+ cin >> B;
+ if ( B > 0 )
+ {
+ cout << "C=";
+ cin >> C;
+ if ( C > 0 )
+    {
+         if  (A >= C && B >= C) 
+         {
+             cout << "Kol-vo kvadratov - " << ((A/C)*(B/C));
+         }
+         else
+         {
+             cout << "Kol-vo kvadratov - 0";
+         }
+    }
+     else
+     {
+         cout << "Error";
+     }
+    }
+ else
+ {
+ cout << "Error";
+ }
+ }
+ else
+ {
+     cout << "Error";
+ }
+}

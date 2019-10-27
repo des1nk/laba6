@@ -1,0 +1,11 @@
+//С начала суток прошло N секунд (N — целое). Найти количество секунд, прошедших с начала последней минуты.
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+int N;
+cout << "N=";
+cin >> N;
+cout << "Kol-vo sekynd, proshedshih s nachala poslednei minyti-" << N%60 << "sekynd";
+}
